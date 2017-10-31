@@ -1278,8 +1278,9 @@ form textarea {
         vertical-align: middle; }
       .forecast-container .forecast.today .degree .num {
         font-size: 90px;
-        font-size: 6.4285714286rem;
-        margin-right: 30px; }
+        font-size: 4rem;
+        margin-right: 30px;
+      }
       .forecast-container .forecast.today span {
         margin-right: 20px; }
         .forecast-container .forecast.today span img {
@@ -1652,37 +1653,58 @@ form textarea {
   background: #262936;
     background: #262936;
     padding-top: 50px;
-    padding-bottom: 159px; }
-  .site-footer .subscribe-form {
-    position: relative;
-    margin-bottom: 30px; }
-    .site-footer .subscribe-form input[type="text"] {
-      padding: 20px 100px 20px 20px;
-      background: #1e202b;
-      width: 100%;
-      color: white; }
-    .site-footer .subscribe-form input[type="submit"] {
-      position: absolute;
-      right: 5px;
-      top: 5px;
-      bottom: 5px; }
-  .site-footer .social-links a {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    border-radius: 50%;
-    background: #1e202b;
-    color: #009ad8;
-    text-align: center;
-    line-height: 2;
-    -webkit-transition: .3s ease;
-            transition: .3s ease;
-    font-size: 20px;
-    font-size: 1.4285714286em; }
-    .site-footer .social-links a:hover {
-      background: #009ad8;
-      color: white; }
+    padding-bottom: 159px;
+}
+.site-footer .subscribe-form {
+  position: relative;
+  margin-bottom: 30px;
+}
+.site-footer .subscribe-form input[type="text"] {
+  padding: 20px 100px 20px 20px;
+  background: #1e202b;
+  width: 100%;
+  color: white;
+}
+.site-footer .subscribe-form input[type="submit"] {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+}
+.site-footer .social-links a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #1e202b;
+  color: #009ad8;
+  text-align: center;
+  line-height: 2;
+  -webkit-transition: .3s ease;
+          transition: .3s ease;
+  font-size: 20px;
+  font-size: 1.4285714286em;
+}
+.site-footer .social-links a:hover {
+  background: #009ad8;
+  color: white;
+}
 
-    .background-dark {
-      background-color: #1e202b;
-    }
+.background-dark {
+  background-color: #1e202b;
+}
+
+
+/*.pm25-span {*/
+
+  /*width: 50%;*/
+  /*box-sizing: border-box;*/
+
+/*}*/
+
+/*.pm25-unit-span {*/
+
+  /*width: 50%;*/
+  /*box-sizing: border-box;*/
+
+/*}*/
