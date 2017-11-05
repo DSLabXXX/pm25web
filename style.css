@@ -168,7 +168,7 @@ select {
 button,
 html input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="button"] {
   -webkit-appearance: button;
   cursor: pointer; }
 
@@ -256,7 +256,7 @@ form textarea {
 /*
  * Reusable Components Style
  */
-.button, form input[type="submit"], form button, form input[type="reset"] {
+.button, form input[type="button"], form button, form input[type="reset"] {
   border: none;
   background: #009ad8;
   padding: 10px 20px;
@@ -1215,12 +1215,12 @@ form textarea {
 .find-location {
   position: relative;
   margin-bottom: 70px; }
-  .find-location input[type="text"] {
+  .find-location input[name="site-value-text"] {
     width: 100%;
     padding: 20px 50px 20px 20px;
     background: #1e202b;
     color: white; }
-  .find-location input[type="submit"] {
+  .find-location input[type="button"] {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -1302,13 +1302,11 @@ form textarea {
       padding: 50px 20px 10px;
       text-align: center; }
       .forecast-container .forecast .forecast-content .forecast-icon {
-        width: 100%;
         height: 80px;
         padding-top: 10px;
       }
       .forecast-container .forecast .forecast-content .degree {
-        font-size: 24px;
-        font-size: 1.7142857143em;
+        font-size: 2rem;
         color: white;
         font-weight: 700;
         text-align: center;
@@ -1605,14 +1603,14 @@ form textarea {
   padding: 0 5px; }
 .contact-form .row {
   margin: 0 -5px; }
-.contact-form input:not([type="submit"]), .contact-form textarea {
+.contact-form input:not([type="button"]), .contact-form textarea {
   width: 100%;
   padding: 15px;
   margin-bottom: 10px;
   color: white;
   border: 2px solid #393c48;
   background: transparent; }
-  .contact-form input:not([type="submit"]):hover, .contact-form input:not([type="submit"]):focus, .contact-form textarea:hover, .contact-form textarea:focus {
+  .contact-form input:not([type="button"]):hover, .contact-form input:not([type="button"]):focus, .contact-form textarea:hover, .contact-form textarea:focus {
     border-color: #009ad8; }
 .contact-form textarea {
   min-height: 150px; }
@@ -1671,7 +1669,7 @@ form textarea {
   width: 100%;
   color: white;
 }
-.site-footer .subscribe-form input[type="submit"] {
+.site-footer .subscribe-form input[type="button"] {
   position: absolute;
   right: 5px;
   top: 5px;
@@ -1716,7 +1714,38 @@ form textarea {
 /*}*/
 
 
-.forecast-icon-img {
+.now-icon-img {
   width: 70px;
   height: 70px;
+  float: left;
+}
+
+.now-value-status {
+
+  font-size: 2rem;
+  float: left;
+  margin: 1rem;
+}
+
+.forecast-icon-img {
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
+.forecast-value-status {
+
+  font-size: 1.8rem;
+  float: left;
+  margin: 1rem;
+}
+
+.padding-small {
+
+  padding-top: 35px;
+}
+
+
+.clearfix {
+  overflow: auto;
 }
