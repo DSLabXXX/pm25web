@@ -1290,7 +1290,8 @@ form textarea {
       @media screen and (max-width: 990px) {
         .forecast-container .forecast.today {
           display: block;
-          width: 100%; } }
+          width: 100%; }
+      }
     .forecast-container .forecast .forecast-header {
       background: rgba(0, 0, 0, 0.1);
       padding: 10px;
@@ -1311,6 +1312,25 @@ form textarea {
         font-weight: 700;
         text-align: center;
       }
+
+      @media screen and (max-width: 600px) {
+        .forecast-container .forecast .forecast-content .degree {
+          font-size: 1.7rem;
+          color: white;
+          font-weight: 700;
+          text-align: center;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .forecast-container .forecast .forecast-content .degree {
+          font-size: 1.5rem;
+          color: white;
+          font-weight: 700;
+          text-align: center;
+        }
+      }
+
       .forecast-container .forecast .forecast-content small {
         font-size: 16px;
         font-size: 1.1428571429em; }
@@ -1743,6 +1763,20 @@ form textarea {
 .padding-small {
 
   padding-top: 35px;
+}
+
+@media screen and (max-width: 600px) {
+  .padding-small {
+
+    padding-top: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .padding-small {
+
+    padding-top: 0px;
+  }
 }
 
 
