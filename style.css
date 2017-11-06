@@ -1296,7 +1296,20 @@ form textarea {
       background: rgba(0, 0, 0, 0.1);
       padding: 10px;
       text-align: center;
-      font-weight: 400; }
+      font-weight: 400;
+    }
+    @media screen and (max-width: 480px) {
+
+      .forecast-container .forecast .forecast-header {
+
+        padding-left: 2px;
+        padding-right: 2px;
+      }
+
+
+    }
+
+
     .forecast-container .forecast .forecast-icon {
       height: 50px; }
     .forecast-container .forecast .forecast-content {
@@ -1324,7 +1337,7 @@ form textarea {
 
       @media screen and (max-width: 480px) {
         .forecast-container .forecast .forecast-content .degree {
-          font-size: 1.4rem;
+          font-size: 1.5rem;
           color: white;
           font-weight: 700;
           text-align: center;
@@ -1775,7 +1788,7 @@ form textarea {
 @media screen and (max-width: 480px) {
   .padding-small {
 
-    padding-top: 0px;
+    padding-top: 0;
   }
 }
 
