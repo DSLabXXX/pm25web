@@ -269,6 +269,7 @@
                     dataType: "json"
                 });
 
+                updateSiteInfo('松山');
 
 
 
@@ -315,19 +316,7 @@
                         alert("無此測站");
                     }
                     else{
-
-                        $.ajax({
-                            type: "POST",
-                            contentType: "application/json; charset=utf-8",
-                            url: "http://114.32.181.210:5000/getSitePrediction",
-                            data: JSON.stringify({siteName: siteName}),
-                            success: function (data) {
-                                updatePrediction(data);
-                            },
-                            dataType: "json"
-                        });
-
-
+                        updateSiteInfo(siteName);
                     }
 
                 }
@@ -335,6 +324,20 @@
 
             });
 
+
+            function updateSiteInfo(siteName) {
+
+                $.ajax({
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    url: "http://114.32.181.210:5000/getSitePrediction",
+                    data: JSON.stringify({siteName: siteName}),
+                    success: function (data) {
+                        updatePrediction(data);
+                    },
+                    dataType: "json"
+                });
+            }
 
             function updatePrediction(data) {
 
