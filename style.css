@@ -942,8 +942,9 @@ form textarea {
 
   .col-lg-offset-12 {
     margin-left: 100%; } }
-@-ms-viewport {
-  width: device-width; }
+/*@-ms-viewport {*/
+  /*width: device-width; */
+/*}*/
 .visible-xs, .visible-sm, .visible-md, .visible-lg {
   display: none !important; }
 
@@ -1688,9 +1689,9 @@ form textarea {
  */
 .site-footer {
   background: #262936;
-    background: #262936;
-    padding-top: 50px;
-    padding-bottom: 159px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
 }
 .site-footer .subscribe-form {
   position: relative;
@@ -1792,6 +1793,160 @@ form textarea {
   }
 }
 
+
+.map-box {
+
+  width:600px;
+  height: 900px;
+  margin: 0 auto;
+
+}
+
+.map-img {
+
+  width: 100%;
+  height: 100%;
+
+}
+
+.map-range-box {
+
+  width: 600px;
+  height:100px;
+  margin: 0 auto;
+
+}
+
+.map-range-img {
+  width: 100%;
+  height:100%;
+}
+
+.predict-button-box {
+
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+
+}
+
+@media (min-width: 768px) {
+  .predict-button-box {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .predict-button-box {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .predict-button-box {
+    width: 1170px;
+  }
+}
+
+
+.predict-button-title {
+
+  width: 100%;
+  font-size: 1.5rem;
+  text-indent: 30px;
+
+}
+
+@media (min-width: 480px) {
+  .predict-button-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .predict-button-title {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .predict-button-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .predict-button-title {
+    font-size: 2rem;
+  }
+}
+
+.predict-button-content {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 50px;
+
+}
+
+@media (min-width: 768px) {
+  .predict-button-content {
+    width: 600px;
+  }
+}
+@media (min-width: 992px) {
+  .predict-button-content {
+    width: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  .predict-button-content {
+    width: 900px;
+  }
+}
+
+.predict-button {
+
+  width: 20%;
+  height: 40px;
+  font-size: 1.5rem;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+
+}
+
+@media (min-width: 768px) {
+  .predict-button {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 992px) {
+  .predict-button {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  .predict-button {
+    font-size: 2rem;
+  }
+}
+
+.background-dark-grey {
+  background-color: #262936;
+}
+
+.background-grey {
+  background-color: #323544;
+}
+
+
+.colophon {
+  text-align: center;
+}
 
 .clearfix {
   overflow: auto;
