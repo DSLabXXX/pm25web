@@ -201,7 +201,7 @@
 
                     <div class="predict-button-content">
 
-                        <div id="predict_0_hr" class="predict-button background-grey">當前時間</div>
+                        <div id="predict_0_hr" class="predict-button background-grey blue-border">當前時間</div>
 
                         <div id="predict_1_hr" class="predict-button background-dark-grey">未來1小時</div>
 
@@ -282,6 +282,11 @@
         <script>
 
             $(".predict-button").click(function (event) {
+
+                $(".predict-button").removeClass("blue-border");
+
+                $(this).addClass("blue-border");
+
 
 
                 var id_name = $(event.target).attr("id");
