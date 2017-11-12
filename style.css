@@ -1951,7 +1951,7 @@ form textarea {
 
   width: 20%;
   height: 40px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 2.2rem;
   display: table-cell;
   vertical-align: middle;
@@ -1961,9 +1961,9 @@ form textarea {
 
 }
 
-@media (min-width: 400px) {
+@media (min-width: 410px) {
   .predict-button {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 
