@@ -2005,9 +2005,22 @@ form textarea {
 .blue-border {
 
   border-style: solid;
-  border-width: 3px;
+  border-width: 1px;
   border-color: #0a67a3;
 
+}
+
+
+@media (min-width: 768px) {
+  .blue-border {
+    border-width: 2px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .blue-border {
+    border-width: 3px;
+  }
 }
 
 
