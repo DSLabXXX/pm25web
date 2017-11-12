@@ -336,7 +336,7 @@
                 sites.forEach(function(site) {
 
                     $('#site-value-list').append($("<option>").attr('value', site));
-                    siteArray.push(site.split("-")[1]);
+                    siteArray.push(site);
 
 
                 });
@@ -347,29 +347,77 @@
 
             $("#search-button").click(function(){
 
-                var fullSiteName = $("#site-value-text").val();
+                var inputSiteName = $("#site-value-text").val();
 
-                if(fullSiteName === ''){
+                if(inputSiteName === ''){
                     alert("請輸入測站地點");
                 }
                 else {
-                    var siteName = fullSiteName.split("-")[1];
 
 
-                    if(!siteName) {
-                        alert("輸入格式錯誤");
-                    }
-                    if(siteArray.indexOf(siteName) === -1) {
+                    var maxSimilarity = 0;
+                    var maxSimilarSite = '';
+
+
+                    siteArray.forEach(function (sitename) {
+
+                        var similarity = getSimilarity(sitename, inputSiteName);
+
+                        if(similarity > maxSimilarity) {
+                            maxSimilarity = similarity;
+                            maxSimilarSite = sitename.split('-')[1];
+                        }
+
+
+                    });
+
+
+                    if(maxSimilarity === 0) {
                         alert("無此測站");
                     }
-                    else{
-                        updateSiteInfo(siteName);
+                    else {
+                        updateSiteInfo(maxSimilarSite);
                     }
+
+
+//                    var siteName = inputSiteName.split("-")[1];
+//
+//
+//                    if(!siteName) {
+//                        alert("輸入格式錯誤");
+//                    }
+//                    if(siteArray.indexOf(siteName) === -1) {
+//                        alert("無此測站");
+//                    }
+//                    else{
+//                        updateSiteInfo(siteName);
+//                    }
 
                 }
 
 
             });
+
+            function getSimilarity(sitename, inputSiteName) {
+
+                var similarity = 0;
+                for(var i = 0; i < inputSiteName.length; i++ ) {
+
+                    var ch = inputSiteName[i];
+
+                    if(ch === '台') {
+                        ch = '臺';
+                    }
+
+
+                    if (sitename.indexOf(ch) > -1) {
+                        similarity++;
+
+                    }
+                }
+
+                return similarity;
+            }
 
 
             function updateSiteInfo(siteName) {
