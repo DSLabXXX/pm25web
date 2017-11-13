@@ -348,11 +348,26 @@
             $("#search-button").click(function(){
 
                 var inputSiteName = $("#site-value-text").val();
+                var newInputSiteName = '';
+
+                for(var i = 0; i < inputSiteName.length; i++ ) {
+
+                    var ch = inputSiteName[i];
+                    if(ch === '台') {
+                        ch = '臺';
+                    }
+                    newInputSiteName += ch;
+                }
+
+                inputSiteName = newInputSiteName;
+
 
                 if(inputSiteName === ''){
                     alert("請輸入測站地點");
                 }
                 else {
+
+
 
 
                     var maxSimilarity = 0;
@@ -367,12 +382,18 @@
                             maxSimilarity = similarity;
                             maxSimilarSite = sitename.split('-')[1];
                         }
-
-
                     });
 
+                    siteArray.forEach(function (sitename) {
 
-                    if(maxSimilarity === 0) {
+                        var siteOnlyName = sitename.split('-')[1];
+
+                        if(sitename === inputSiteName || siteOnlyName === inputSiteName) {
+                            maxSimilarSite = siteOnlyName;
+                        }
+                    });
+
+                    if(maxSimilarSite === '') {
                         alert("無此測站");
                     }
                     else {
@@ -404,11 +425,6 @@
                 for(var i = 0; i < inputSiteName.length; i++ ) {
 
                     var ch = inputSiteName[i];
-
-                    if(ch === '台') {
-                        ch = '臺';
-                    }
-
 
                     if (sitename.indexOf(ch) > -1) {
                         similarity++;

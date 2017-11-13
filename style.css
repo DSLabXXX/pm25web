@@ -1805,19 +1805,20 @@ form textarea {
 
 @media (min-width: 768px) {
   .map-box {
-    width: 750px;
+    width: 702px;
+    height: 1212px;
   }
 }
-@media (min-width: 992px) {
-  .map-box {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .map-box {
-    width: 1170px;
-  }
-}
+/*@media (min-width: 992px) {*/
+  /*.map-box {*/
+    /*width: 970px;*/
+  /*}*/
+/*}*/
+/*@media (min-width: 1200px) {*/
+  /*.map-box {*/
+    /*width: 1170px;*/
+  /*}*/
+/*}*/
 
 
 
@@ -1840,19 +1841,19 @@ form textarea {
 
 @media (min-width: 768px) {
   .map-range-box {
-    width: 750px;
+    width: 702px;
   }
 }
-@media (min-width: 992px) {
-  .map-range-box {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .map-range-box {
-    width: 1170px;
-  }
-}
+/*@media (min-width: 992px) {*/
+  /*.map-range-box {*/
+    /*width: 970px;*/
+  /*}*/
+/*}*/
+/*@media (min-width: 1200px) {*/
+  /*.map-range-box {*/
+    /*width: 1170px;*/
+  /*}*/
+/*}*/
 
 
 
