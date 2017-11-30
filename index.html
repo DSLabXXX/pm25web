@@ -222,7 +222,7 @@
 
                 <div id="map-box" class="map-box">
 
-                    <img id="map-img" src="http://114.32.181.210/img/map/basemap_color_now.png"  class="map-img" alt="">
+                    <img id="map-img" src="http://220.134.52.177/img/map/basemap_color_now.png"  class="map-img" alt="">
 
 
 
@@ -295,11 +295,11 @@
                 var hr = id_name.split("_")[1];
 
                 if(hr === '0') {
-                    $("#map-img").attr("src", "http://114.32.181.210/img/map/basemap_color_now.png");
+                    $("#map-img").attr("src", "http://220.134.52.177/img/map/basemap_color_now.png");
                 }
                 else {
 
-                    $("#map-img").attr("src", "http://114.32.181.210/img/map/basemap_color_"+hr+"hr.png");
+                    $("#map-img").attr("src", "http://220.134.52.177/img/map/basemap_color_"+hr+"hr.png");
                 }
 
                 console.log(hr);
@@ -314,7 +314,7 @@
                 $.ajax({
                     type: "GET",
                     contentType: "application/json; charset=utf-8",
-                    url: "http://114.32.181.210:5000/getSites",
+                    url: "http://220.134.52.177:5000/getSites",
                     success: function (data) {
                         appendDataToDataList(data);
                     },
@@ -441,7 +441,7 @@
                 $.ajax({
                     type: "POST",
                     contentType: "application/json; charset=utf-8",
-                    url: "http://114.32.181.210:5000/getSitePrediction",
+                    url: "http://220.134.52.177:5000/getSitePrediction",
                     data: JSON.stringify({siteName: siteName}),
                     success: function (data) {
                         updatePrediction(data);

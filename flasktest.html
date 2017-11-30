@@ -28,7 +28,7 @@
             $.ajax({
                 type: "POST",
                 contentType: "application/json; charset=utf-8",
-                url: "http://114.32.181.210:5000/getSitePrediction",
+                url: "http://220.134.52.177:5000/getSitePrediction",
                 data: JSON.stringify({siteName: '土城'}),
                 success: function (data) {
                     alert(data['predictPM2_5_1hr']);
